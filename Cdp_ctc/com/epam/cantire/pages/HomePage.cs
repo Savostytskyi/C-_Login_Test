@@ -23,7 +23,7 @@ namespace Cdp_ctc.com.epam.cantire.pages
 
         public LoginPage NavigateToLoginPage()
     {
-            WaitingUtils.WaitForElementLoad(SignInLabel, Constants.MidleDelay);
+            WaitingUtils.WaitForElementLoad(SignInLabel, 50000);
             Driver.GetDriver().FindElement(SignInLabel).Click();
             WaitingUtils.WaitForElementLoad(SignInLink, Constants.ShortDelay);
             Driver.GetDriver().FindElement(SignInLink).Click();
