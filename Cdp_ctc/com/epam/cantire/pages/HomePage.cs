@@ -9,10 +9,7 @@ namespace Cdp_ctc.com.epam.cantire.pages
 {
    public class HomePage
     {
-        public static readonly By SignInLabel = By.XPath("//div[@data-component='HeaderSignIn']//span[contains(@class,'flyout-toggle__text')]");
-        public static readonly By SignInLink = By.XPath("//a[@class='global-sign-in__content__link']");
-        public static readonly By BannerButton = By.XPath("//div[@class='banner-builder__button-label']");
-        public static readonly By LocaleButton = By.XPath("//a[contains(@class, 'language')]");
+        public static readonly By SignInLink = By.XPath("//a[contains(@href,'/login.html')]");
 
         public HomePage OpenHomePage(string locale)
         {
@@ -23,19 +20,9 @@ namespace Cdp_ctc.com.epam.cantire.pages
 
         public LoginPage NavigateToLoginPage()
     {
-            WaitingUtils.WaitForElementLoad(SignInLabel, Constants.MidleDelay);
-            Driver.GetDriver().FindElement(SignInLabel).Click();
             WaitingUtils.WaitForElementLoad(SignInLink, Constants.ShortDelay);
             Driver.GetDriver().FindElement(SignInLink).Click();
             return new LoginPage();
     }
-
-        public HomePage checkIsUserLogedIn(string label)
-        {
-            WaitingUtils.WaitForElementLoad(BannerButton, Constants.ShortDelay);
-            Assert.AreEqual(label, Driver.GetDriver().FindElement(SignInLabel).Text);
-            return this;
-        }
-
     }
 }

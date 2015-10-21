@@ -8,7 +8,7 @@ using System;
 
 namespace Cdp_ctc.com.epam.cantire.tests
 {
-    [SetUpFixture]
+    [TestFixture]
     public class BaseTestSetUp
 
     {

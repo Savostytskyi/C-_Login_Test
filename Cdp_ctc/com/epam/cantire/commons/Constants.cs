@@ -11,5 +11,6 @@ namespace Cdp_ctc.com.epam.cantire.commons
         public static readonly int OneSecondDelay = 1000;
         public static readonly int ShortDelay = 5000;
         public static readonly int MidleDelay = 10000;
+        public static readonly int LongDelay = 25000;
     }
 }

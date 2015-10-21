@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="com\epam\cantire\commons\Constants.cs" />
     <Compile Include="com\epam\cantire\commons\data\provider\TestDataProvider.cs" />
+    <Compile Include="com\epam\cantire\pages\ProfilePage.cs" />
     <Compile Include="com\epam\cantire\tests\BaseTestSetUp.cs" />
     <Compile Include="com\epam\core\commons\utils\WaitingUtils.cs" />
     <Compile Include="com\epam\cantire\pages\HomePage.cs" />

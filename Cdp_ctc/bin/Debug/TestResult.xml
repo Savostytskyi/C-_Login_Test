@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\Cdp_ctc.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-10-21" time="18:59:48">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug" machine-name="EPUAKHAW0133" user="Anton_Savostytskyi" user-domain="KYIV" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\Cdp_ctc.dll" executed="True" result="Success" success="True" time="49.730" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Cdp_ctc" executed="True" result="Success" success="True" time="49.722" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="com" executed="True" result="Inconclusive" success="False" time="0.009" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="epam" executed="True" result="Inconclusive" success="False" time="0.009" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="cantire" executed="True" result="Inconclusive" success="False" time="0.008" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="tests" executed="True" result="Inconclusive" success="False" time="0.007" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="BaseTestSetUp" executed="True" result="Inconclusive" success="False" time="0.005" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="LoginTests" executed="True" result="Success" success="True" time="49.697" asserts="0">
+            <results>
+              <test-suite type="ParameterizedTest" name="LoginUsingCorrectCreds" executed="True" result="Success" success="True" time="49.695" asserts="0">
+                <results>
+                  <test-case name="Cdp_ctc.LoginTests.LoginUsingCorrectCreds(&quot;en&quot;,&quot;My Account&quot;)" executed="True" result="Success" success="True" time="25.916" asserts="1" />
+                  <test-case name="Cdp_ctc.LoginTests.LoginUsingCorrectCreds(&quot;fr&quot;,&quot;Mon Compte&quot;)" executed="True" result="Success" success="True" time="23.759" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

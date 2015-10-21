@@ -15,5 +15,11 @@ namespace Cdp_ctc.com.epam.cantire.commons.utils
                 wait.Until(ExpectedConditions.ElementIsVisible(by));
             }
         }
+
+        public static void WaitForPageContainsTitle(string title)
+        {
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromMilliseconds(Constants.MidleDelay));
+            wait.Until(ExpectedConditions.TitleContains(title));
+        }
     }
 }

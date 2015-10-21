@@ -15,18 +15,18 @@ namespace Cdp_ctc
         }
 
         [Test, TestCaseSource("LocaleData")]
-        public void LoginUsingCorrectCreds(string locale, string label)
+        public void LoginUsingCorrectCreds(string locale, string title)
         {
             homePage.OpenHomePage(locale)
                     .NavigateToLoginPage()
                     .LoginAsRegistresdUser()
-                    .checkIsUserLogedIn(label);
+                    .CheckIsPageOpened(title);
         }
 
         static object[] LocaleData =
         {
             new object[] { "en", "My Account"},
-            new object[] { "fr", "My Account"},
+            new object[] { "fr", "Mon Compte"},
         };
     }
 
