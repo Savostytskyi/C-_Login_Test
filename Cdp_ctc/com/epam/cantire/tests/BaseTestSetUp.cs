@@ -1,21 +1,21 @@
 ﻿using Cdp_ctc.com.epam.cantire.commons;
 using Cdp_ctc.com.epam.cantire.pages;
 using Cdp_ctc.com.epam.core.config;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using System;
 
 namespace Cdp_ctc.com.epam.cantire.tests
 {
-    [TestClass]
+    [SetUpFixture]
     public class BaseTestSetUp
 
     {
         protected IWebDriver driver;
         protected HomePage homePage;
 
-        [TestInitialize()]
+        [SetUp]
         public void StartupBase()
         {
             driver = new FirefoxDriver();
@@ -24,7 +24,7 @@ namespace Cdp_ctc.com.epam.cantire.tests
             Driver.SetDriver(driver);
         }
 
-        [TestCleanup()]
+        [TearDown]
         public void CleanupBase()
         {
             driver.Close();

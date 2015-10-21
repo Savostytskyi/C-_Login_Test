@@ -1,21 +1,20 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Cdp_ctc.com.epam.cantire.pages;
+﻿using Cdp_ctc.com.epam.cantire.pages;
 using Cdp_ctc.com.epam.cantire.tests;
+using NUnit.Framework;
 
 namespace Cdp_ctc
 {
-    [TestClass]
+    [TestFixture]
     public class LoginTests : BaseTestSetUp
     
     {
-        [TestInitialize()]
+        [SetUp]
         public void Startup()
         {
             homePage = new HomePage();
         }
 
-        [TestMethod]
+        [Test]
         public void LoginUsingCorrectCreds()
         {
             homePage.OpenHomePage("en")

@@ -9,3 +9,5 @@ D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\WebDriver.Support.xml
 D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\obj\Debug\Cdp_ctc.csprojResolveAssemblyReference.cache
 D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\obj\Debug\Cdp_ctc.dll
 D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\obj\Debug\Cdp_ctc.pdb
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\nunit.framework.dll
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\nunit.framework.xml
