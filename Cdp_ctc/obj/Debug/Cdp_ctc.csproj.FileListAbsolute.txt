@@ -1,0 +1,11 @@
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\Cdp_ctc.dll.config
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\Cdp_ctc.dll
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\Cdp_ctc.pdb
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\WebDriver.dll
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\WebDriver.Support.dll
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\WebDriver.xml
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\bin\Debug\WebDriver.Support.xml
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\obj\Debug\Cdp_ctc.csprojResolveAssemblyReference.cache
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\obj\Debug\Cdp_ctc.dll
+D:\Projects\Cdp_ctc\LoginTest\Cdp_ctc\obj\Debug\Cdp_ctc.pdb
