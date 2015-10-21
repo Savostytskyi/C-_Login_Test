@@ -14,14 +14,20 @@ namespace Cdp_ctc
             homePage = new HomePage();
         }
 
-        [Test]
-        public void LoginUsingCorrectCreds()
+        [Test, TestCaseSource("LocaleData")]
+        public void LoginUsingCorrectCreds(string locale, string label)
         {
-            homePage.OpenHomePage("en")
+            homePage.OpenHomePage(locale)
                     .NavigateToLoginPage()
                     .LoginAsRegistresdUser()
-                    .checkIsUserLogedIn();
+                    .checkIsUserLogedIn(label);
         }
+
+        static object[] LocaleData =
+        {
+            new object[] { "en", "My Account"},
+            new object[] { "fr", "My Account"},
+        };
     }
 
 }

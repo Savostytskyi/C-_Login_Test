@@ -23,23 +23,17 @@ namespace Cdp_ctc.com.epam.cantire.pages
 
         public LoginPage NavigateToLoginPage()
     {
-            WaitingUtils.WaitForElementLoad(SignInLabel, 50000);
+            WaitingUtils.WaitForElementLoad(SignInLabel, Constants.MidleDelay);
             Driver.GetDriver().FindElement(SignInLabel).Click();
             WaitingUtils.WaitForElementLoad(SignInLink, Constants.ShortDelay);
             Driver.GetDriver().FindElement(SignInLink).Click();
             return new LoginPage();
     }
 
-        public HomePage checkIsUserLogedIn()
+        public HomePage checkIsUserLogedIn(string label)
         {
             WaitingUtils.WaitForElementLoad(BannerButton, Constants.ShortDelay);
-            if (Driver.GetDriver().FindElement(LocaleButton).GetAttribute("href").Contains("fr"))
-            {
-                Assert.AreEqual("My Account", Driver.GetDriver().FindElement(SignInLabel).Text);
-            } else
-            {
-                Assert.AreEqual("My Accounte", Driver.GetDriver().FindElement(SignInLabel).Text);
-            }
+            Assert.AreEqual(label, Driver.GetDriver().FindElement(SignInLabel).Text);
             return this;
         }
 
